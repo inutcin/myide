@@ -1,0 +1,76 @@
+*myvim*
+
+
+*myvim-keymap* 
+
++-----+----------+------------++-----+----------------------------------------+
+|        Functionality        ||                   Movement                   |
++-----+----------+------------++---------+------------------------------------+
+| Key | Regular  | Debuging   ||   Key   |            Action                  |
++-----+----------+------------++---------+------------------------------------+
+| F1  | Help     |            ||    b    | To previous word
+| F2  | Save     | Step over  ||    e    | То last symbol of current word
+| F3  | F-search | Step into  ||    w    | To next word
+| F4  | Replace  | Step out   ||    x    | Erase one symbol
+| F5  |   ---    | Run        ||    ^    | To begin of line 
+| F6  |          | Close      ||    $    | To end of line
+| F7  |          | Detach     ||    {    | To previous paragraph
+| F8  | Build    |            ||    }    | To next paragraph
+| F9  | File tree|            ||    gg   | To begin of document
+| F10 |          | Breakpoint ||    G    | То end of document
+| F11 |          | Get context||    :N   | To N-line position of document
+| F12 | Menu     | Eval cursor||    %    | То pair bracket
++-----+----------+------------++---------+------------------------------------+
+|       Tabs + Buffers        ||                   Edition                    |
++------------+----------------++---------+------------------------------------+
+|     Key    |    Action      ||   Key   |            Action                  |
++------------+----------------++---------+------------------------------------+
+|Ctrl + F10  | Close tab/buf  ||    J    | Join current and next lines        |
+|Alt + left  | Next tab       ||    U    | Undo                               |
+|Alt + right | Prev tab       ||ctrl + r | Redo                               |
+|Ctrl+ left  | Buffer left    ||ctrl + > | Indent selected line               |
+|Ctrl+ right | Buffer right   ||ctrl + > | Indent selected line               |
+|Ctrl+ up    | Buffer up      ||ctrl + N>| Indent selected line N-times       |
+|Ctrl+ donw  | Buffer down    ||ctrl + N<| Unindent selected line N-times     |
+                              ||    d$   | Erase from symbol 2 end of line    |
+                              ||    d^   | Erase from symb 2 start of line    |
+                              ||    dd   | Erase the line                     |
+                              ||   Ndd   | Erase N-lines                      |
+                              ||    d}   | Erase from symb 2 end of paragraph |
+                              ||    d{   | Erase fr symb 2 begin of paragraph |
+                              ||    de   | Erase fr symb 2 begin of paragraph |
+                              ++---------+------------------------------------+
+                              || c$ c^ c{ c} ce cc Ncc - similar d and dd with|
+                              || insert mode after action                     |
+                              ++---------+------------------------------------+
+
+
+*myvim-menu*
+
+- Encoding
+    - cp1251
+    - cp866
+    - utf-8
+    - kou8-r
+- Spell
+    - On
+    - Off
+- Autocomplete
+    - On
+    - Of
+- GitGutter
+    - Update
+    - Update all buffers
+    - Disable
+    - Enable
+- Fold
+    - By Indent
+    - Manual (select with visual mode and "zf" in comand mode)
+- Docker (list docker containers in separait buffer)
+    - Open
+    - Close
+    - Help
+
+
+
+
